@@ -14,10 +14,7 @@ class ListView: UIView, UITableViewDelegate, UITableViewDataSource {
     // MARK: IBActions
     
     @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
-        let alert = UIAlertController(title: "Add", message: "new to-do", preferredStyle: .alert)
-        alert.addTextField { toDoTextField in
-            toDoTextField.placeholder = "Enter a to-do"
-        }
+        self.controller?.addTask()
     }
     
     // MARK: -
